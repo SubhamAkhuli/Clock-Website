@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.jfif" type="image/x-icon">
+    <title>Analog Clock </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <!-- <div id="country">
+    <div id="clockcontainer3">
+        <div id="hour3"></div>
+        <div id="minute3"></div>
+        <div id="second3"></div>
+        <div class="origin">
+        <p><img src="London.png" alt="Indian Standrad Time"></p>
+            <p >London</p>
+        </div>
+    </div> -->
+    <div id="clockcontainer">
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+    </div>
+    <div class="origin">
+        <p><img src="India.png" alt="Indian Standrad Time"></p>
+        <p>Kolkata</p>
+        <p>Date-Time: <span id="datetime"></span></p>
+    </div>
+    <!-- </div> -->
+    <!-- <script>
+        let d = new Date()
+        india.innerHTML = d.toLocaleString('en-US', { timeZone: ' Asia/ Kolkata ', }).split(", ")
+    </script> -->
+    <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleString();
+        </script>
+</body>
+
+</html>
