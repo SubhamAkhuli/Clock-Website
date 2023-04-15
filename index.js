@@ -10,6 +10,8 @@ setInterval(() => {
     minute.style.transform = `rotate(${mrotation}deg)`;
     second.style.transform = `rotate(${srotation}deg)`;
     // To print the time and date
+    const timeElement = document.querySelector(".time");
+    const dateElement = document.querySelector(".date");
     function formatTime(date) {
         const hours12 = date.getHours() % 12 || 12;
         const minutes = date.getMinutes();
