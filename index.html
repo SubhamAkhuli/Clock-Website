@@ -18,16 +18,10 @@
         <div id="second"></div>
     </div>
     <div class="origin">
-        <p><img src="India.png" alt="Indian Standrad Time"></p>
-        <p>Kolkata</p>
-        <p>Date-Time: <span id="datetime"></span></p>
+        <p>Location-Kolkata</p>
+        <p class="time"></p>
+        <p class="date"></p>
     </div>
-    <script>
-        setInterval(() =>{
-            var dt = new Date();
-            document.getElementById("datetime").innerHTML = dt.toLocaleString();
-        },1000)
-        </script>
 </body>
 
 </html>
